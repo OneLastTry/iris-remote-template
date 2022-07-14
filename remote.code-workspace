@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "main",
+			"path": "."
+		},
+		{
+			"name": "user",						// logical name on the left menu
+			"path": "code/user"					// physical address of the code
+		}
+	],
+	"settings": {
+		"objectscript.conn": {
+			"active": true
+		},
+		"intersystems.servers": {
+		
+			"remote": {
+				"webServer": {
+					"scheme": "http",
+					"host": "localhost",		// IRIS address
+					"port": 52773				// IRIS web port 
+				},
+				"description": "REMOTE",
+				"username": "superuser",		// IRIS username (password will be asked we connection is made) 
+			},
+			"/default": "remote"
+		},
+	}
+}
